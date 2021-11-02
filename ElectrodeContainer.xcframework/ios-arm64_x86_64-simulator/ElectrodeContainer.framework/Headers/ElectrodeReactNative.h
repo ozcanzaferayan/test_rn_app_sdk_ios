@@ -76,9 +76,11 @@ NS_ASSUME_NONNULL_BEGIN
  */
 
 + (void)startWithConfigurations:(id<ElectrodePluginConfig>)reactContainerConfig
+                        electrodeCodePushConfig: (id<ElectrodePluginConfig>) electrodeCodePushConfig
                         __attribute((deprecated("use -startWithConfigurations:ernDelegate instead")));
 
 + (void)startWithConfigurations:(id<ElectrodePluginConfig>)reactContainerConfig ernDelegate:(id<ERNDelegate> _Nullable)ernDelegate
+                        electrodeCodePushConfig: (id<ElectrodePluginConfig> _Nullable) electrodeCodePushConfig
 ;
 
 
